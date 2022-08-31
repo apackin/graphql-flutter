@@ -43,7 +43,7 @@ void main() {
         link: link,
       );
 
-      final queryResponse = Response(data: data);
+      final queryResponse = Response(data: data, response: {});
       when(
         link.request(any),
       ).thenAnswer(
